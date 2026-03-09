@@ -4,5 +4,5 @@ export type Session = {
     country_name: string;
     location: string;
     date_start: string;
-    year: number;
+    year?: number;
   };
