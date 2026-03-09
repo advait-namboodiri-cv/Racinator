@@ -30,4 +30,4 @@ This project is a full-stack F1 dashboard built to analyze race weekends and ses
 - Python data pipeline scripts for preprocessing
 
 ### Planned Backend
-- FastAPI or Next.js API routes
+- FastAPI API routes
