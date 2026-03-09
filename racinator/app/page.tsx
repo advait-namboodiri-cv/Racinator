@@ -17,27 +17,27 @@ export default async function HomePage()
          <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
           <h2 className="text-xl font-semibold">Tracks</h2>
           <p className="mt-2 text-sm text-neutral-400">
-            Explore circuit maps, and GPS traces.
+          View circuit maps and lap traces!
           </p>
         </div>
 
         <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
           <h2 className="text-xl font-semibold">Sessions</h2>
           <p className="mt-2 text-sm text-neutral-400">
-            Analyze lap sectors, and stint performance.
+          See lap times, sectors, weather, and tire data.
           </p>
         </div>
 
         <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
           <h2 className="text-xl font-semibold">Drivers</h2>
           <p className="mt-2 text-sm text-neutral-400">
-            Compare pace, telemetry, and race trends.
+          Compare pace, driving style, and race performance.
           </p>
          </div> 
          <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
             <h2 className="text-xl font-semibold">Simulator</h2>
             <p className="mt-2 text-sm text-neutral-400">
-              Test strategy ideas using weather, and pit-stop assumptions.
+            Test strategy ideas with pit and weather changes.
             </p>
           </div>
         </div>   
