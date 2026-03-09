@@ -1,5 +1,8 @@
-export default function Home() 
+import { getSessions } from "./lib/openf1";
+export default async function HomePage() 
 {
+  const sessions = await getSessions();
+  const previewSessions = sessions.slice(0, 5);
   return (
     <main className="min-h-screen bg-neutral-950 text-white px-6 py-10">
       <section className="mx-auto max-w-6xl">
