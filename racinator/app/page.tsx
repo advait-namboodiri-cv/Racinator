@@ -40,7 +40,26 @@ export default async function HomePage()
               Test strategy ideas using weather, and pit-stop assumptions.
             </p>
           </div>
-        </div>       
+        </div>   
+        <section className="mt-12">
+          <h2 className="text-2xl">2025 Session Preview</h2>
+
+          <div className="mt-5 space-y-4">
+            {previewSessions.map((session: any) => (
+              <div
+                key={session.session_key}
+                className="rounded-xl border border-neutral-800 bg-neutral-900 p-4"
+              >
+                <p className="font-medium text-white">
+                  {session.country_name} — {session.session_name}
+                </p>
+                <p className="mt-1 text-sm text-neutral-400">
+                  {session.location}, {session.date_start}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
       </section>
     </main>
   );
