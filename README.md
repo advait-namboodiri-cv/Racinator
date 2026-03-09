@@ -17,3 +17,17 @@ This project is a full-stack F1 dashboard built to analyze race weekends and ses
 - tire degradation assumptions
 - pit stop timing experiments
 - what-if race scenarios
+
+## Tech Stack
+
+### Frontend
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+### Data
+- OpenF1 API for telemetry data
+- Python data pipeline scripts for preprocessing
+
+### Planned Backend
+- FastAPI or Next.js API routes
