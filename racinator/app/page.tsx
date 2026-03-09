@@ -31,6 +31,12 @@ export default function Home()
             Compare pace, telemetry, and race trends.
           </p>
          </div> 
+         <div className="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
+            <h2 className="text-xl font-semibold">Simulator</h2>
+            <p className="mt-2 text-sm text-neutral-400">
+              Test strategy ideas using weather, and pit-stop assumptions.
+            </p>
+          </div>
         </div>       
       </section>
     </main>
