@@ -30,8 +30,21 @@ export default function SessionCard({ session }: SessionCardProps) {
             <h3 className="mt-2 text-xl font-semibold text-white transition-colors duration-300 group-hover:text-red-400">
               {session.session_name}
             </h3>
-          </div>
+            <p className="mt-2 text-sm text-neutral-400">{session.location}</p>
         </div>
+
+        <div className="rounded-full border border-neutral-700 px-3 py-1 text-xs text-neutral-300">
+          #{session.session_key}
+        </div>
+      </div>
+
+      <div className="mt-6 flex items-center justify-between">
+        <p className="text-sm text-neutral-500">{formatDate(session.date_start)}</p>
+
+        <span className="text-sm font-medium text-red-400 transition-transform duration-300 group-hover:translate-x-1">
+          View session →
+        </span>
+          </div>
       </Link>
     );
   }
