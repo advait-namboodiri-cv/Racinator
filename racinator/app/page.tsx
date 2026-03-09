@@ -6,6 +6,12 @@ export default function Home()
         <h1 className="text-4xl font-bold tracking-tight text-red-500">
           F1 Telemetry Dashboard
         </h1>
+        <p className="mt-4 max-w-2xl text-neutral-300 text-lg">
+          An interactive Formula 1 analytics platform for exploring tracks,
+          and race strategy.
+          
+
+        </p>
       </section>
     </main>
   );
