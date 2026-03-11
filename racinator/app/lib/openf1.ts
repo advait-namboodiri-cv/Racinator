@@ -1,4 +1,5 @@
 import { Session } from "../types/session";
+import { Driver } from "../types/driver";
 export async function getSessions(year: string): Promise<Session[]> {
     const res = await fetch(`https://api.openf1.org/v1/sessions?year=${year}`, {
       cache: "no-store",
@@ -21,4 +22,17 @@ export async function getSessionByKey(sessionKey: string): Promise<Session | nul
   
     const data: Session[] = await res.json();
     return data[0] ?? null;
+  }
+
+  export async function getDriversBySession(sessionKey: string): Promise<Driver[]> {
+    const res = await fetch(
+      `https://api.openf1.org/v1/drivers?session_key=${sessionKey}`,
+      { cache: "no-store" }
+    );
+  
+    if (!res.ok) {
+      throw new Error("Failed to fetch drivers for session");
+    }
+  
+    return res.json();
   }
