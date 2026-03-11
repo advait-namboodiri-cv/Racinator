@@ -1,8 +1,20 @@
+import { getSessionByKey } from "../../lib/openf1";
 type SessionDetailsPageProps = {
     params: Promise<{
       session_key: string;
     }>;
   };
+  
+  function formatDate(dateString: string) {
+    const date = new Date(dateString);
+  
+    return new Intl.DateTimeFormat("en-US", {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    }).format(date);
+  }
   
   export default async function SessionDetailsPage({ params }: SessionDetailsPageProps) {
     const { session_key } = await params;
